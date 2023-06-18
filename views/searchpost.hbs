@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/form-card.css" />
+    <link rel="stylesheet" href="../styles/post-card.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav class="nav_links">
+        <div class="nav-link-inner">
+          <div class="brandName">
+            <h1>Food Gallery</h1>
+            <!-- <img src="" alt="logo" /> -->
+          </div>
+          <ul class="link-list">
+            <li class="list-item">
+              <a href="/"><svg
+                  class="menu-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"
+                  ></path>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="list-item">
+              <a href="/posts/searchpost"><svg
+                  class="menu-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 19.585938 21.585938 C 20.137937 22.137937 21.033938 22.137938 21.585938 21.585938 C 22.137938 21.033938 22.137938 20.137938 21.585938 19.585938 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"
+                  ></path>
+                </svg>
+                Search
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="/posts/addPost"><img
+                  class="menu-icon"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlElEQVR4nO2VSwqEMAxA36p3Us83fq41XQxzD51rRIQUhkLbiT8Y8UFWJnnGlgg3RhwwAB9AjDEBnfZI0q9oLFG0OcGkSZV1dKD+miRJeIu1SKm+lPAGXkcKZOPzCwr8D9fSHy14bhH8/xmcLvDRN99dUKJYH5bdsrisNFo75pK6Hdb1IydwKgmTiCFGbZ794dwQMwN70Zn2JRkBqQAAAABJRU5ErkJggg=="
+                />Add Post</a>
+            </li>
+            <li class="list-item">
+              <a href="/posts"><img
+                  class="menu-icon"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuUlEQVR4nO2UMQoCMRBFH17BwkpPYGVhbbkr1l7C2iPYeQQvYuuy9xC38AAWIqhjkyKsI8lmRxDZB9N8kv8SAoGOSOZABUjCVEAeEqSWi5tTSCAG8z+CEii+KRDtRrElB2BnIbgCj1p2BPpAD9i3EVyAMbAA7i67AVNv/QA4pwiewNLL1y5f1TcAM+8A0YKtUjThM5umgiHNGMUKLL8K0QS5W5RanoUElshPCErDN1EpWpZnem0H77wAMwH3+lZbxK8AAAAASUVORK5CYII="
+                />Post</a>
+            </li>
+            <li class="list-item">
+              <a href="#"><img
+                  class="menu-icon"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABCUlEQVR4nO2Sv0rDUBjFfwg1Qh+hjl2C+ArO7VIQcXcvCa4+guALdHVpoVv7BlWDOFkypoOtr6CgUyRwApfbSP6UQCg98MHNud93fjc3gX3UEXADuJbfBVaqZG3K1Uwym6sHIAamln8nP9ba1FT+fV74pRp/gAt5DuDr5CkgAjztod5f7Q3+Cz8G1moayjsFlkawXe9AR72evA+glQW4VkOou3Rywk2Io5lQ3lUWYGKd/rZAeFq+9RbjLECkzTM9v5UAvGrm3PhGW5oDz8av9l0C8KWZZDYAZhRQXLJK6wDY4ys6AUYVAI9AuwggqBAeq16KAJ52ACxosj6Nk27qAPQVnFSvDkAz9QcpVdXoaCCT7gAAAABJRU5ErkJggg=="
+                />Notification</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="middle">
+        <div class="main-content-inner">
+          <form action="/posts/searchpost" method="POST">
+            <input
+              type="text"
+              name="search"
+              placeholder="Enter hashtag to search"
+            />
+            <button>Search</button>
+          </form>
+          <div class="post-area">
+
+          </div>
+        </div>
+      </div>
+      <div class="right_sidebar"></div>
+
+    </div>
+
+  </body>
+</html>

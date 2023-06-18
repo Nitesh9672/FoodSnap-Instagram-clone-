@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/form-card.css" />
+    <link rel="stylesheet" href="../styles/post-card.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+
+    <div class="main">
+
+      <nav class="nav_links">
+        <div class="nav-link-inner">
+          <div class="brandName">
+            <h1>Food Gallery</h1>
+            <!-- <img src="" alt="logo" /> -->
+          </div>
+          <ul class="link-list">
+            <li class="list-item">
+              <a href="/"><svg
+                  class="menu-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"
+                  ></path>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="list-item">
+              <a href="/posts/searchpost"><svg
+                  class="menu-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 19.585938 21.585938 C 20.137937 22.137937 21.033938 22.137938 21.585938 21.585938 C 22.137938 21.033938 22.137938 20.137938 21.585938 19.585938 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"
+                  ></path>
+                </svg>
+                Search
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="/posts/addPost"><img
+                  class="menu-icon"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlElEQVR4nO2VSwqEMAxA36p3Us83fq41XQxzD51rRIQUhkLbiT8Y8UFWJnnGlgg3RhwwAB9AjDEBnfZI0q9oLFG0OcGkSZV1dKD+miRJeIu1SKm+lPAGXkcKZOPzCwr8D9fSHy14bhH8/xmcLvDRN99dUKJYH5bdsrisNFo75pK6Hdb1IydwKgmTiCFGbZ794dwQMwN70Zn2JRkBqQAAAABJRU5ErkJggg=="
+                />Add Post</a>
+            </li>
+            <li class="list-item">
+              <a href="/posts"><img
+                  class="menu-icon"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuUlEQVR4nO2UMQoCMRBFH17BwkpPYGVhbbkr1l7C2iPYeQQvYuuy9xC38AAWIqhjkyKsI8lmRxDZB9N8kv8SAoGOSOZABUjCVEAeEqSWi5tTSCAG8z+CEii+KRDtRrElB2BnIbgCj1p2BPpAD9i3EVyAMbAA7i67AVNv/QA4pwiewNLL1y5f1TcAM+8A0YKtUjThM5umgiHNGMUKLL8K0QS5W5RanoUElshPCErDN1EpWpZnem0H77wAMwH3+lZbxK8AAAAASUVORK5CYII="
+                />Post</a>
+            </li>
+            <li class="list-item">
+              <a href="#"><img
+                  class="menu-icon"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABCUlEQVR4nO2Sv0rDUBjFfwg1Qh+hjl2C+ArO7VIQcXcvCa4+guALdHVpoVv7BlWDOFkypoOtr6CgUyRwApfbSP6UQCg98MHNud93fjc3gX3UEXADuJbfBVaqZG3K1Uwym6sHIAamln8nP9ba1FT+fV74pRp/gAt5DuDr5CkgAjztod5f7Q3+Cz8G1moayjsFlkawXe9AR72evA+glQW4VkOou3Rywk2Io5lQ3lUWYGKd/rZAeFq+9RbjLECkzTM9v5UAvGrm3PhGW5oDz8av9l0C8KWZZDYAZhRQXLJK6wDY4ys6AUYVAI9AuwggqBAeq16KAJ52ACxosj6Nk27qAPQVnFSvDkAz9QcpVdXoaCCT7gAAAABJRU5ErkJggg=="
+                />Notification</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="middle">
+        <div class="main-content-inner">
+
+          <div class="postCard">
+            <div class="postCard-inner">
+              <div class="user-detail">
+                <div class="user-profile-container">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt=""
+                    class="user-profile"
+                  />
+                </div>
+                <h3 class="user-name">User Name</h3>
+
+              </div>
+              <div class="post-title">
+                <h2>{{data.title}}</h2>
+              </div>
+              <div class="post-image">
+                <img src="{{data.imageURL}}" alt="" />
+              </div>
+              <div class="post-caption">
+                <h4>{{data.caption}}</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right_sidebar">
+        <div class="form-card">
+          <form action="/posts/updatePost" method="post">
+            <div>
+              <label for="title" class="post-title">Post Title</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                value="{{data.title}}"
+              />
+            </div>
+            <div>
+              <label for="image-url" class="image-url">Enter Image</label>
+              <input
+                type="text"
+                id="image-url"
+                name="imageURL"
+                value="{{data.imageURL}}"
+              />
+            </div>
+            <div>
+              <label for="caption" class="caption">Caption</label>
+              <input
+                type="text"
+                id="caption"
+                name="caption"
+                value="{{data.caption}}"
+              />
+            </div>
+            <div class="hidden"><input
+                type="text"
+                name="id"
+                value="{{data._id}}"
+              /></div>
+            <button type="submit">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

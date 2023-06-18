@@ -1,0 +1,47 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/login-signup.css" />
+  </head>
+
+  <body>
+    <div class="div">
+      <div class="container">
+        <div class="left">
+          <img src="../utilities/photos/Welcome-2.png" alt="" />
+        </div>
+        <div class="right">
+          <div class="center">
+            <div class="logo" width="60px" height="40px">
+              <img
+                src="../utilities/photos/foodsnap-logo-removebg-preview.png"
+                alt=""
+              />
+            </div>
+            <h1>Welcome to signup</h1>
+            <form action="/signup" method="POST">
+              {{! Username: }}
+              <input id="username" name="email" placeholder="Username" />
+              <br />
+              {{! Password: }}
+              <input id="password" name="password" placeholder="Password" />
+              <br />
+              <button type="submit">Signup</button>
+            </form>
+
+            <div class="signup">
+              <span> Already a user? </span>
+              <span><a href="/login">Login</a></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

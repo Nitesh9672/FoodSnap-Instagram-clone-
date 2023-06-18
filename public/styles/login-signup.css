@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  margin: auto auto;
+  /* margin: auto; */
+}
+.div {
+  width: 70%;
+  margin: auto;
+}
+.mssg {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(97, 97, 97);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+}
+.container .left {
+  flex-basis: 50%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+.right {
+  margin: auto auto;
+}
+.logo {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.logo img {
+  width: 100%;
+}
+.right h1 {
+  margin-bottom: 15px;
+  color: orange;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+.center input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0.2rem 0.4rem;
+  font-family: "Poppins", sans-serif;
+}
+.center button {
+  border: none;
+  width: 100%;
+  background: orange;
+  margin: 10px 0;
+  padding: 6px 0;
+  border-radius: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.center .facebook {
+  margin-top: 0;
+  width: 100%;
+  background: transparent;
+  border: 1px solid orange;
+}
+.center .facebook a {
+  width: 100%;
+
+  margin: 10px 0;
+  padding: 6px 0;
+  border-radius: 5px;
+  color: rgb(97, 97, 97);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.center .signup {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(97, 97, 97);
+}
