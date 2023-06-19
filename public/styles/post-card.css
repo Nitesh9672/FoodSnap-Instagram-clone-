@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.postCard {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.postCard-inner {
+  padding: 20px;
+  padding-bottom: 10px;
+  /* max-height: 500px; */
+}
+
+.user-detail {
+  display: flex;
+  gap: 12px;
+}
+.user-name {
+  font-size: 1rem;
+  margin: auto 0;
+  font-weight: 600;
+  color: rgb(52, 52, 52);
+  font-family: "Poppins", sans-serif;
+}
+.user-profile-container {
+  width: 30px;
+  border-radius: 50%;
+}
+.user-profile {
+  width: 100%;
+  object-fit: contain;
+}
+.postCard-inner > div {
+  margin-bottom: 10px;
+}
+.post-image {
+  width: 100%;
+}
+.post-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.post-title h2 {
+  font-size: 1.2rem;
+  color: rgb(48, 47, 47);
+}
+.post-caption h4 {
+  font-weight: 200;
+  color: rgb(57, 57, 57);
+}
+.comment-count p {
+  color: #9a9a9a;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.user-interaction {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.likes {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.heart-icon {
+  fill: rgb(158, 158, 158);
+  /* background-color: red; */
+}
+.like .heart-icon {
+  fill: red;
+  /* background-color: red; */
+}
+.likesCount {
+  display: block;
+}

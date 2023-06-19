@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.comment-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+.comment {
+  margin: auto 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.user-name {
+  font-weight: 500;
+}
+.comments-container {
+  overflow-y: auto;
+  /* height: 80%;
+  background-color: green; */
+}
+
+/* width */
+.comments-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.comments-container::-webkit-scrollbar-track {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+}
+
+/* Handle */
+.comments-container::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.comments-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 153, 0);
+}
+
+.absolute-0 {
+  position: absolute;
+  bottom: 0;
+}
+.right_sidebar {
+  position: relative;
+  height: 90vh;
+  /* background-color: red; */
+}
+.comment-form-card {
+  width: 100%;
+}
+/* .toggleHide {
+  display: none;
+} */
+.reply {
+  border: none;
+  background: none;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #9c9c9c;
+}
+.comment .comment-form-card {
+  border-top: none;
+  margin-top: 0;
+}
+.comment .flex-row {
+  padding: 5px 0;
+}

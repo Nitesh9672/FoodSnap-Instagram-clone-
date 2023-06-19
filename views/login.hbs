@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/login-signup.css" />
+  </head>
+  <body>
+    <div class="div">
+      <div class="mssg">{{msg}}</div>
+      <div class="container">
+        <div class="left">
+          <img src="../utilities/photos/Welcome-2.png" alt="" />
+        </div>
+        <div class="right">
+          <div class="center">
+            <div class="logo" width="60px" height="40px">
+              <img
+                src="../utilities/photos/foodsnap-logo-removebg-preview.png"
+                alt=""
+              />
+            </div>
+            <h1>Welcome to Login</h1>
+
+            <form action="/login" method="POST">
+              {{! Username: }}
+              <input id="username" name="email" placeholder="Username" />
+              <br />
+              {{! Password: }}
+              <input id="password" name="password" placeholder="Password" />
+              <br />
+              <button type="submit">Login</button>
+            </form>
+
+            <button class="facebook">
+
+              <a href="/auth/facebook">Login with facebook</a>
+            </button>
+
+            <div class="signup">
+              <span>Don't have an account yet?</span>
+              <span><a href="/signup">Signup</a></span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

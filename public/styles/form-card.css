@@ -1,0 +1,30 @@
+.form-card {
+  margin: 40px 0;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #dbdbdb;
+}
+.comment-form-card {
+  border-top: 1px solid #dbdbdb;
+  margin-top: 20px;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  padding-bottom: 0;
+}
+.comment {
+  border: none;
+}
+.comment-form-card button {
+  border: none;
+  background-color: transparent;
+  color: #0095f6;
+}
+.comment-form-card button:hover {
+  color: #001726;
+}
+.comment:focus {
+  outline: none;
+}
